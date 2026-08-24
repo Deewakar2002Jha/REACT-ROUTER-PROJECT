@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router";
+import { BrowserRouter, Route, Routes, Link, NavLink } from "react-router";
 import Homecss from "./pages/Homecss";
 import Aboutcss from "./pages/Aboutcss";
 import Contactcss from "./pages/Contactcss";
@@ -9,7 +9,16 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
+      <header>
+        <nav>
+          <h1>
+            Ganpat university
+          </h1>
+          <Link to="/" >Home</Link>
+          <NavLink to="/about">About</NavLink>
+        </nav>
+      </header>
 
       <Routes>
         <Route path="/" element={<Homecss />} />
