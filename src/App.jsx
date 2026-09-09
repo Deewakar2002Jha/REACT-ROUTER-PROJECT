@@ -3,22 +3,15 @@ import { BrowserRouter, Route, Routes, Link, NavLink } from "react-router";
 import Homecss from "./pages/Homecss";
 import Aboutcss from "./pages/Aboutcss";
 import Contactcss from "./pages/Contactcss";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar"
+import Navbar1 from "./components/Navbar1";
+import Navbar2 from "./components/Navbar2";
 import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
-      <header>
-        <nav>
-          <h1>
-            Ganpat university
-          </h1>
-          <Link to="/" >Home</Link>
-          <NavLink to="/about">About</NavLink>
-        </nav>
-      </header>
+      <Navbar2 />
 
       <Routes>
         <Route path="/" element={<Homecss />} />
