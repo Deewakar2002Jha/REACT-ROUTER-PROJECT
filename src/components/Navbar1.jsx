@@ -21,6 +21,14 @@ function Navbar1() {
                         About
                     </Link>
                 </li>
+                <li>
+                    <Link
+                        to="/about"
+                        className="text-white font-semibold hover:text-gray-200"
+                    >
+                        services
+                    </Link>
+                </li>
 
                 <li>
                     <Link
